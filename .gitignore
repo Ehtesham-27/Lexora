@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables & secrets (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+*.env*
+*.eng
+backend/.env
+frontend/.env
+
+# Internal specification & training documentation
+requirements.md
+backend.md
+frontend.md
+fileStructure.md
+
+# Production build artifacts
+dist/
+*/dist/
+dist-ssr/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE & Editor caches
+.serena/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

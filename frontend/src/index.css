@@ -1,0 +1,353 @@
+/* ==========================================================================
+   LEXORA — Lavender Claymorphism Design System
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Light Theme Palette */
+  --bg-main: #EAE6F2;
+  --surface-main: #EAE6F2;
+  --surface-raised: #F3EFF9;
+  --surface-card: #ECE7F5;
+  --surface-elevated: #F6F3FB;
+  --surface-lavender: #D9D0EF;
+  --surface-lavender-subtle: #E9E3F7;
+  
+  /* Primary & Accent */
+  --accent-primary: #7965C1;
+  --accent-primary-hover: #6954B5;
+  --accent-primary-active: #5C48A4;
+  --accent-primary-light: #ECE7FA;
+  --accent-glow: rgba(121, 101, 193, 0.22);
+
+  /* Pastels */
+  --pastel-blue: #D5E3F5;
+  --pastel-blue-text: #344D6E;
+  --pastel-peach: #F2D9D0;
+  --pastel-peach-text: #734538;
+  --pastel-mint: #D3E8DE;
+  --pastel-mint-text: #2D5845;
+  --pastel-lavender-text: #53418D;
+
+  /* Typography */
+  --text-main: #383449;
+  --text-secondary: #77718C;
+  --text-muted: #9E98B0;
+  --text-inverse: #FFFFFF;
+  --text-on-accent: #FFFFFF;
+
+  /* Borders & Highlights */
+  --border-subtle: rgba(255, 255, 255, 0.6);
+  --border-dark-subtle: rgba(119, 113, 140, 0.15);
+
+  /* Clay Shadows (Light) */
+  --shadow-clay-sm: 4px 4px 10px rgba(188, 178, 206, 0.65), -4px -4px 10px rgba(255, 255, 255, 0.95);
+  --shadow-clay-md: 7px 7px 18px rgba(185, 175, 204, 0.6), -7px -7px 18px rgba(255, 255, 255, 0.95);
+  --shadow-clay-lg: 12px 12px 28px rgba(180, 169, 200, 0.55), -12px -12px 28px rgba(255, 255, 255, 0.95);
+  --shadow-clay-pill: 0 10px 30px rgba(121, 101, 193, 0.18), 6px 6px 16px rgba(185, 175, 204, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.95);
+  --shadow-clay-inset: inset 3px 3px 6px rgba(180, 170, 198, 0.65), inset -3px -3px 6px rgba(255, 255, 255, 0.95);
+  --shadow-clay-inset-sm: inset 2px 2px 4px rgba(180, 170, 198, 0.55), inset -2px -2px 4px rgba(255, 255, 255, 0.9);
+  --shadow-clay-inset-focus: inset 3px 3px 6px rgba(121, 101, 193, 0.35), inset -3px -3px 6px rgba(255, 255, 255, 0.95), 0 0 0 2px var(--accent-primary);
+  --shadow-clay-pressed: inset 2px 2px 5px rgba(160, 150, 180, 0.6), inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+  --shadow-clay-accent: 5px 5px 14px rgba(121, 101, 193, 0.4), -3px -3px 10px rgba(255, 255, 255, 0.4);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Layout */
+  --nav-height: 72px;
+  --content-max-width: 1040px;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Palette */
+  --bg-main: #1D1A26;
+  --surface-main: #242031;
+  --surface-raised: #2C273C;
+  --surface-card: #272336;
+  --surface-elevated: #312C43;
+  --surface-lavender: #3E3557;
+  --surface-lavender-subtle: #342D49;
+  
+  /* Primary & Accent */
+  --accent-primary: #9C89E6;
+  --accent-primary-hover: #AD9DF0;
+  --accent-primary-active: #8B76DD;
+  --accent-primary-light: #382F52;
+  --accent-glow: rgba(156, 137, 230, 0.28);
+
+  /* Pastels (Dark adjusted) */
+  --pastel-blue: #223249;
+  --pastel-blue-text: #A8CEF6;
+  --pastel-peach: #422927;
+  --pastel-peach-text: #F8BDB1;
+  --pastel-mint: #1F3B30;
+  --pastel-mint-text: #A5E4C7;
+  --pastel-lavender-text: #CEBFFF;
+
+  /* Typography */
+  --text-main: #EFEBF7;
+  --text-secondary: #ADA6C2;
+  --text-muted: #79728E;
+  --text-inverse: #1D1A26;
+  --text-on-accent: #FFFFFF;
+
+  /* Borders & Highlights */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-dark-subtle: rgba(0, 0, 0, 0.25);
+
+  /* Clay Shadows (Dark) */
+  --shadow-clay-sm: 4px 4px 10px rgba(10, 8, 15, 0.8), -3px -3px 8px rgba(50, 44, 68, 0.55);
+  --shadow-clay-md: 7px 7px 18px rgba(10, 8, 15, 0.85), -6px -6px 16px rgba(53, 47, 73, 0.55);
+  --shadow-clay-lg: 12px 12px 28px rgba(8, 7, 12, 0.9), -8px -8px 22px rgba(56, 49, 78, 0.55);
+  --shadow-clay-pill: 0 12px 36px rgba(0, 0, 0, 0.65), 6px 6px 18px rgba(10, 8, 15, 0.85), -5px -5px 14px rgba(55, 48, 76, 0.5);
+  --shadow-clay-inset: inset 3px 3px 6px rgba(8, 7, 13, 0.9), inset -3px -3px 6px rgba(53, 47, 73, 0.5);
+  --shadow-clay-inset-sm: inset 2px 2px 4px rgba(8, 7, 13, 0.85), inset -2px -2px 4px rgba(53, 47, 73, 0.45);
+  --shadow-clay-inset-focus: inset 3px 3px 6px rgba(156, 137, 230, 0.35), inset -3px -3px 6px rgba(53, 47, 73, 0.5), 0 0 0 2px var(--accent-primary);
+  --shadow-clay-pressed: inset 2px 2px 5px rgba(8, 7, 13, 0.9), inset -2px -2px 5px rgba(53, 47, 73, 0.5);
+  --shadow-clay-accent: 5px 5px 14px rgba(10, 8, 15, 0.8), -3px -3px 10px rgba(70, 60, 96, 0.6);
+}
+
+/* ==========================================================================
+   Base & Resets
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-lavender);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+a:hover {
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   Typography Utility Classes
+   ========================================================================== */
+
+.font-serif {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-main) 30%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   Claymorphism Component Styles
+   ========================================================================== */
+
+/* Raised Clay Card */
+.clay-card {
+  background-color: var(--surface-card);
+  box-shadow: var(--shadow-clay-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.clay-card-interactive {
+  background-color: var(--surface-card);
+  box-shadow: var(--shadow-clay-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.clay-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay-lg);
+}
+.clay-card-interactive:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-clay-sm);
+}
+
+/* Inset Clay Input */
+.clay-input {
+  background-color: var(--surface-main);
+  box-shadow: var(--shadow-clay-inset);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  color: var(--text-main);
+  padding: 14px 18px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.clay-input:focus {
+  box-shadow: var(--shadow-clay-inset-focus);
+}
+.clay-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Tactile Clay Button (Raised) */
+.clay-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--surface-raised);
+  color: var(--text-main);
+  box-shadow: var(--shadow-clay-sm);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-subtle);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.16s ease;
+  user-select: none;
+}
+.clay-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-clay-md);
+  color: var(--accent-primary);
+}
+.clay-btn:active {
+  transform: translateY(1px);
+  box-shadow: var(--shadow-clay-pressed);
+}
+
+/* Primary Accent Clay Button */
+.clay-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--accent-primary);
+  color: var(--text-on-accent);
+  box-shadow: var(--shadow-clay-accent);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.16s ease;
+  user-select: none;
+}
+.clay-btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 6px 6px 18px rgba(121, 101, 193, 0.45);
+}
+.clay-btn-primary:active {
+  background-color: var(--accent-primary-active);
+  transform: translateY(1px);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Subtle Inset Badge/Pill */
+.clay-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: var(--surface-main);
+  box-shadow: var(--shadow-clay-inset-sm);
+  color: var(--text-secondary);
+}
+
+/* Pastel Badge Variants */
+.clay-badge-lavender {
+  background-color: var(--surface-lavender);
+  color: var(--pastel-lavender-text);
+  box-shadow: var(--shadow-clay-sm);
+}
+.clay-badge-blue {
+  background-color: var(--pastel-blue);
+  color: var(--pastel-blue-text);
+  box-shadow: var(--shadow-clay-sm);
+}
+.clay-badge-peach {
+  background-color: var(--pastel-peach);
+  color: var(--pastel-peach-text);
+  box-shadow: var(--shadow-clay-sm);
+}
+.clay-badge-mint {
+  background-color: var(--pastel-mint);
+  color: var(--pastel-mint-text);
+  box-shadow: var(--shadow-clay-sm);
+}
+
+/* ==========================================================================
+   Layout Containers & Spacing
+   ========================================================================== */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-wrapper {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 24px 20px 120px 20px; /* 120px bottom padding to clear floating nav */
+}
+
+@media (max-width: 640px) {
+  .content-wrapper {
+    padding: 16px 16px 110px 16px;
+  }
+}
