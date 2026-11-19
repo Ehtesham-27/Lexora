@@ -24,7 +24,7 @@ export const connectDatabase = async (mongoUri) => {
     mongoose.set("strictQuery", true);
 
     const conn = await mongoose.connect(mongoUri, {
-      serverSelectionTimeoutMS: 8000,
+      serverSelectionTimeoutMS: 15000,
       autoIndex: process.env.NODE_ENV !== "production"
     });
 
