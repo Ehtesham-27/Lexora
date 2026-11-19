@@ -59,4 +59,12 @@ app.use((_req, res) => {
 // Centralized error handler
 app.use(errorHandler);
 
+// Auto-bootstrap server if app.js is executed directly as entrypoint (e.g. `node app.js` on Render)
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))) {
+  import("./server.js");
+}
+
 export default app;

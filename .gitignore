@@ -19,6 +19,9 @@ backend.md
 frontend.md
 fileStructure.md
 
+# Local launcher scripts
+start-lexora.bat
+
 # Production build artifacts
 dist/
 */dist/
